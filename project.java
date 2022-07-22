@@ -3,12 +3,12 @@ public class project {
         int r =3;
         int c = 3;
         int[][]matrix = {{1,2,3},{4,5,6},{7,8,9}};
-        int sum = 0;
+        int sum = 1;
 
         for (int i = 0;i < r;i++){
             for (int j =0; j< c;j++) {
                 if (matrix[i] == matrix[j]) {
-                    sum = sum + matrix[i][j];
+                    sum = sum * matrix[i][j];
                 }
             }
         }
